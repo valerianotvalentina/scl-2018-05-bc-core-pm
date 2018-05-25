@@ -8,19 +8,25 @@
 <body>
 
   <div id="root">
-  <input id="cajaTextoUno" type="text" name="textoParaTransformar"
-  placeholder="Texto para cifrar/descifrar" class="cajaDeTextoUno">
-
-  <input id="desplazamiento" type="number" min="0" name="desplazamientoNumero"
-  placeholder="Número de desplazamiento" class="desplazamNumber">
-
-  <input id="botonElegir" type="range" min="1" max="2" name="botonElegir">
-
-  <input id="cajaTextoDos" type="text" name="textoParaTransformar"
-  placeholder="Texto para cifrar/descifrar" class="cajaDeTextoDos">
-
-  </div>  
-
+    <div>  
+      <!-- <textarea id="escribeMensaje" placeholder="Texto para cifrar/descifrar" rows="10" cols="70"></textarea> -->
+      <input type="text" id="escribeMensaje" placeholder="Texto para cifrar/descifrar" ></div>
+    </div> 
+    <br/>
+    <br/>
+    <br/>
+    <div>
+      <input id="desplazamiento" type="number" min="0" placeholder="Número de desplazamiento">
+    </div>
+    <div>
+        <button id="botonCifrar" onclick="clickCifrar()">Cifrar</button>
+        <button id="botonDescifrar" onclick="clickDescifrar()">Descifrar</button>
+    </div>
+    <div>
+       <!-- <textarea id="muestraMensaje" placeholder="Descubre tu mensaje" rows="10" cols="70"></textarea> -->
+       <input type="text" id="muestraMensaje" placeholder="Descubre tu mensaje" ></div>
+    </div>
+  </div>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
