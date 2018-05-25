@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <div id="root">
-    <div>  
-      <!-- <textarea id="escribeMensaje" placeholder="Texto para cifrar/descifrar" rows="10" cols="70"></textarea> -->
-      <input type="text" id="escribeMensaje" placeholder="Texto para cifrar/descifrar" ></div>
-    </div> 
+    <div id="root">
+        <div>
+            <!-- <textarea id="escribeMensaje" placeholder="Texto para cifrar/descifrar" rows="10" cols="70"></textarea> -->
+            <input type="text" id="escribeMensaje" placeholder="Texto para cifrar/descifrar"></div>
+    </div>
     <br/>
     <br/>
     <br/>
     <div>
-      <input id="desplazamiento" type="number" min="0" placeholder="Número de desplazamiento">
+        <input id="desplazamiento" type="number" min="0" placeholder="Número de desplazamiento">
     </div>
     <div>
         <button id="botonCifrar" onclick="clickCifrar()">Cifrar</button>
         <button id="botonDescifrar" onclick="clickDescifrar()">Descifrar</button>
     </div>
     <div>
-       <!-- <textarea id="muestraMensaje" placeholder="Descubre tu mensaje" rows="10" cols="70"></textarea> -->
-       <input type="text" id="muestraMensaje" placeholder="Descubre tu mensaje" ></div>
+        <!-- <textarea id="muestraMensaje" placeholder="Descubre tu mensaje" rows="10" cols="70"></textarea> -->
+        <input type="text" id="muestraMensaje" placeholder="Descubre tu mensaje"></div>
     </div>
-  </div>
+    </div>
 
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
