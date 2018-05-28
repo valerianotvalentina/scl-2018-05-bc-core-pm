@@ -6,13 +6,16 @@ window.cipher = {
         for (let index = 0; index <= longitudMensaje; index++) {
             letrasMensaje[index] = cifrar.charCodeAt(index); /*aquí se guarda el número de cada caracter*/
         }
-        let letrasCifradas = []; /*cree esta variable para guardar las letras cifradas*/
+        let letrasCifradas = []; /*creé esta variable para guardar las letras cifradas*/
 
         for (let index = 0; index <= longitudMensaje; index++) {
-            let ecuacionCesar = ((letrasMensaje[index] - 65 + desplazar) % 26 + 65);
+            let numerador = parseInt(letrasMensaje[index]) - parseInt(65);
+            let numeradorDesplazado = parseInt(numerador) + parseInt(desplazar);
+            let resto = parseInt(numeradorDesplazado) % parseInt(26);
+            let ecuacionCesar = parseInt(resto) + 65;
             letrasCifradas[index] = String.fromCharCode(ecuacionCesar); /*guardé las letras cifradas*/
         }
-        let mensajeCifrado = ""; /*cree esta variable para guardar el mensaje cifrado*/
+        let mensajeCifrado = ""; /*creé esta variable para guardar el mensaje cifrado*/
         for (let index = 0; index <= longitudMensaje; index++) {
             mensajeCifrado = mensajeCifrado + letrasCifradas[index]; /*guardé el mensaje cifrado*/
         }
@@ -28,7 +31,7 @@ window.cipher = {
         for (let index = 0; index <= longitudMensaje; index++) {
             letrasMensaje[index] = descifrar.charCodeAt(index); /*aquí se guarda el número de cada caracter*/
         }
-        let letrasDescifradas = []; /*cree esta variable para guardar las letras descifradas*/
+        let letrasDescifradas = []; /*creé esta variable para guardar las letras descifradas*/
 
         for (let index = 0; index <= longitudMensaje; index++) {
             let ecuacionCesar = ((letrasMensaje[index] - 65 - desplazar) % 26 + 65);
