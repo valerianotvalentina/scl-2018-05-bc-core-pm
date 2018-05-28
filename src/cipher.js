@@ -4,7 +4,7 @@ window.cipher = {
         let longitudMensaje = cifrar.length - 1;
         let letrasMensaje = [];
         for (let index = 0; index <= longitudMensaje; index++) {
-            letrasMensaje[index] = cifrar.charCodeAt(index); /*aquí se guarda el número de cada caracter*/
+            letrasMensaje[index] = cifrar.toUpperCase().charCodeAt(index); /*aquí se guarda el número de cada caracter*/
         }
         let letrasCifradas = []; /*creé esta variable para guardar las letras cifradas*/
 
@@ -29,7 +29,7 @@ window.cipher = {
         let longitudMensaje = descifrar.length - 1;
         let letrasMensaje = [];
         for (let index = 0; index <= longitudMensaje; index++) {
-            letrasMensaje[index] = descifrar.charCodeAt(index); /*aquí se guarda el número de cada caracter*/
+            letrasMensaje[index] = descifrar.toUpperCase().charCodeAt(index); /*aquí se guarda el número de cada caracter*/
         }
         let letrasDescifradas = []; /*creé esta variable para guardar las letras descifradas*/
 
