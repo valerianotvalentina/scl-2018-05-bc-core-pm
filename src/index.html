@@ -3,35 +3,50 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado César</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <div id="root">
-        <div>
-            <!-- <textarea id="escribeMensaje" placeholder="Texto para cifrar/descifrar" rows="10" cols="70"></textarea> -->
-            <input type="text" id="escribeMensaje" placeholder="Texto para cifrar/descifrar"></div>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    <div>
-        <input id="desplazamiento" type="number" min="0" placeholder="Número de desplazamiento">
-    </div>
-    <div>
-        <button id="botonCifrar" onclick="clickCifrar()">Cifrar</button>
-        <button id="botonDescifrar" onclick="clickDescifrar()">Descifrar</button>
-    </div>
-    <div>
-        <!-- <textarea id="muestraMensaje" placeholder="Descubre tu mensaje" rows="10" cols="70"></textarea> -->
-        <input type="text" id="muestraMensaje" placeholder="Descubre tu mensaje"></div>
-    </div>
+    <div id="root" class="row">
+        <div class="column">
+            <div>
+                <h1>Cifrado César</h1>
+            </div>
+            <div>
+                <h2>El Cifrado César es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más
+                    adelante en el alfabeto.</h2>
+            </div>
+            <div>
+                <h3>¿Qué puedes hacer aquí?</h3>
+            </div>
+            <div>
+                <h4>Cifrar y descifrar mensajes escogiendo la cantidad de veces que quieres que las letras se desplacen.</h4>
+            </div>
+        </div>
+        <div id="columnaDerecha" class="column">
+            <div>
+                <!-- <textarea id="escribeMensaje" placeholder="Texto para cifrar/descifrar"></textarea> -->
+                <input type="text" id="escribeMensaje" placeholder="Escribe tu mensaje" class="bordes"></div>
+            <div>
+                <input id="desplazamiento" type="number" min="0" placeholder="Número de desplazamientos" class="bordes">
+            </div>
+            <div>
+                <button id="botonCifrar" class="botones" onclick="clickCifrar()">Cifrar mensaje</button>
+                <button id="botonDescifrar" class="botones" onclick="clickDescifrar()">Descifrar mensaje</button>
+            </div>
+            <div>
+                <!-- <textarea id="muestraMensaje" placeholder="Descubre tu mensaje"></textarea> -->
+                <input type="text" id="muestraMensaje" placeholder="Descubre tu mensaje" class="bordes"></div>
+        </div>
     </div>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    </div>
+    </div>
 </body>
 
 </html>
