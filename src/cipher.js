@@ -32,7 +32,7 @@ window.cipher = {
         let letrasDescifradas = []; /*creé esta variable para guardar las letras descifradas*/
 
         for (let index = 0; index <= descifrar.length - 1; index++) {
-            let ecuacionCesar = ((letrasMensaje[index] - 65 - desplazar) % 26 - 65);
+            let ecuacionCesar = ((letrasMensaje[index] - 90 - desplazar) % 26 + 90);
             letrasDescifradas[index] = String.fromCharCode(ecuacionCesar); /*guardé las letras descifradas*/
         }
         let mensajeDescifrado = ""; /*cree esta variable para guardar el mensaje descifrado*/
