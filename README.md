@@ -1,3 +1,16 @@
+Hello!
+El link a Trello para que vean mi proceso es https://trello.com/b/gGS33lhy
+
+## Cómo funciona el sitio
+
+Es algo así como un traductor de Google, solo que para cifrar y descifrar, sería como un nuevo idioma.
+Para que funcione:
+1. Se debe escribir o pegar el mensaje a cifrar/descifrar
+2. Luego establecer la cantidad (número) de veces que se desplazarán las letras del mensaje escrito o pegado.
+3. Clickear en el botón respectivo, "cifrar tu mensaje" o "descifrar tu mensaje", dependiendo del caso.
+4. En el cuadro inferior, aparecerá el mensaje descifrado/cifrado.
+5. Listo! ya puedes ser cool y saber leer mensajes cifrados o cifrar los tuyos para enviárselos a tus amigos.
+
 # Cifrado César
 
 ## Preámbulo
