@@ -18,7 +18,7 @@ caso 5: x >= 123 y x < 127
         /* cifrar es el mensaje */
         let letrasMensaje = [];
         for (let index = 0; index <= cifrar.length - 1; index++) {
-            letrasMensaje[index] = cifrar.toUpperCase().charCodeAt(index); /*aquí se guarda el número de cada caracter*/
+            letrasMensaje[index] = cifrar.charCodeAt(index); /*aquí se guarda el número de cada caracter*/
         }
         let letrasCifradas = []; /*creé esta variable para guardar las letras cifradas*/
 
@@ -33,6 +33,10 @@ caso 5: x >= 123 y x < 127
 
             } else if (letrasMensaje[index] > 31 && letrasMensaje[index] < 65) {
                 let ecuacionCesar = ((parseInt(letrasMensaje[index]) - 32 + parseInt(desplazar)) % 33 + 32);
+                letrasCifradas[index] = String.fromCharCode(ecuacionCesar); /*guardé las letras cifradas*/
+
+            } else if (letrasMensaje[index] > 96 && letrasMensaje[index] < 123) {
+                let ecuacionCesar = ((parseInt(letrasMensaje[index]) - 97 + parseInt(desplazar)) % 26 + 97);
                 letrasCifradas[index] = String.fromCharCode(ecuacionCesar); /*guardé las letras cifradas*/
             }
 
@@ -50,7 +54,7 @@ caso 5: x >= 123 y x < 127
         /* Vamos a descifrar el mensaje */
         let letrasMensaje = [];
         for (let index = 0; index <= descifrar.length - 1; index++) {
-            letrasMensaje[index] = descifrar.toUpperCase().charCodeAt(index); /*aquí se guarda el número de cada caracter*/
+            letrasMensaje[index] = descifrar.charCodeAt(index); /*aquí se guarda el número de cada caracter*/
         }
         let letrasDescifradas = []; /*creé esta variable para guardar las letras descifradas*/
 
@@ -63,8 +67,11 @@ caso 5: x >= 123 y x < 127
             } else if (letrasMensaje[index] > 31 && letrasMensaje[index] < 65) {
                 let ecuacionCesar = ((parseInt(letrasMensaje[index]) - 64 - parseInt(desplazar)) % 33 + 64);
                 letrasDescifradas[index] = String.fromCharCode(ecuacionCesar); /*guardé las letras descifradas*/
-            }
 
+            } else if (letrasMensaje[index] > 96 && letrasMensaje[index] < 123) {
+                let ecuacionCesar = ((parseInt(letrasMensaje[index]) - 122 - parseInt(desplazar)) % 26 + 122);
+                letrasDescifradas[index] = String.fromCharCode(ecuacionCesar); /*guardé las letras descifradas*/
+            }
         }
         let mensajeDescifrado = ""; /*cree esta variable para guardar el mensaje descifrado*/
         for (let index = 0; index <= descifrar.length - 1; index++) {
