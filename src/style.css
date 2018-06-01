@@ -1,25 +1,15 @@
 body {
-    background-color: #388174;
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
-.column {
-    float: left;
-    width: 50%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#columnaDerecha {
-    margin-top: 125px;
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 h1 {
-    color: #74FBE2;
+    color: #388174;
     margin-top: 25px;
     margin-left: 25px;
     text-transform: uppercase;
@@ -28,14 +18,14 @@ h1 {
 }
 
 h2 {
-    color: #74FBE2;
+    color: #388174;
     margin-left: 25px;
     font-size: 17px;
     font-weight: 400;
 }
 
 h3 {
-    color: #74FBE2;
+    color: #388174;
     margin-top: 50px;
     margin-left: 25px;
     font-size: 20px;
@@ -43,63 +33,65 @@ h3 {
 }
 
 h4 {
-    color: #74FBE2;
+    color: #388174;
     margin-left: 25px;
     font-size: 17px;
     font-weight: 400;
 }
 
 ::placeholder {
-    color: #74FBE2;
+    color: #388174;
+    line-height: 30px;
 }
 
 .bordes {
-    border: 2px solid #74FBE2;
+    border: 2px solid #388174;
     border-radius: 6px;
     outline: none;
 }
 
 #escribeMensaje {
-    background-color: #388174;
+    background-color: #ffffff;
     margin-left: 25px;
     width: 520px;
     height: 200px;
     font-size: 13px;
-    color: white;
+    color: #388174;
     padding-left: 10px;
+    line-height: 30px;
 }
 
 #muestraMensaje {
-    background-color: #388174;
+    background-color: #f0f0f0;
     margin-left: 25px;
     width: 520px;
     height: 200px;
     font-size: 13px;
-    color: white;
+    color: #388174;
     padding-left: 10px;
+    line-height: 30px;
 }
 
 #desplazamiento {
-    background-color: #388174;
     margin-left: 25px;
     width: 520px;
     height: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 13px;
-    color: white;
+    color: #388174;
     padding-left: 10px;
 }
 
 .botones {
-    background-color: #74FBE2;
+    background-color: #388174;
     margin-left: 25px;
     width: 252px;
     height: 40px;
     margin-bottom: 30px;
     border-radius: 6px;
     border: none;
-    color: #388174;
+    color: white;
     font-size: 15px;
     text-transform: uppercase;
     opacity: 1;
