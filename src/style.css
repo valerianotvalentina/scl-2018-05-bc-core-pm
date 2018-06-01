@@ -8,6 +8,10 @@ body {
     grid-template-columns: 50% 50%;
 }
 
+#columnaDerecha {
+    margin-top: 45px;
+}
+
 h1 {
     color: #388174;
     margin-top: 25px;
@@ -53,8 +57,10 @@ h4 {
 #escribeMensaje {
     background-color: #ffffff;
     margin-left: 25px;
-    width: 520px;
-    height: 200px;
+    max-width: 520px;
+    min-width: 520px;
+    max-height: 200px;
+    min-height: 200px;
     font-size: 13px;
     color: #388174;
     padding-left: 10px;
@@ -64,8 +70,10 @@ h4 {
 #muestraMensaje {
     background-color: #f0f0f0;
     margin-left: 25px;
-    width: 520px;
-    height: 200px;
+    max-width: 520px;
+    min-width: 520px;
+    max-height: 200px;
+    min-height: 200px;
     font-size: 13px;
     color: #388174;
     padding-left: 10px;
@@ -94,11 +102,10 @@ h4 {
     color: white;
     font-size: 15px;
     text-transform: uppercase;
-    opacity: 1;
     transition: 0.3s;
     outline: none;
 }
 
 .botones:hover {
-    opacity: 0.8;
+    background-color: #49c5b6;
 }
