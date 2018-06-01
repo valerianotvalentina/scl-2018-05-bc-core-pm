@@ -1,20 +1,5 @@
 window.cipher = {
     encode: (cifrar, desplazar) => {
-        /* borrar despues de aqui
-sea x el numero de la letra
-sea n el numero del desplazamiento
-caso 1: (x-32+n)%33+32 para simbolos y numeros
-caso 2: (x-65+n)%26+65 para mayusculas
-caso 3: (x-32+n)%6+91 mas simbolos
-caso 4: (x-32+n)%26+97 minusculas
-caso 5: (x-32+n)%5+123 otros simbolos
-condiciones
-caso 1: x >= 32 y x < 65
-caso 2: x >= 65 y x < 91
-caso 3: x >= 91 y x < 97
-caso 4: x >= 97 y x < 123
-caso 5: x >= 123 y x < 127
-        */
         /* cifrar es el mensaje */
         let letrasMensaje = [];
         for (let index = 0; index <= cifrar.length - 1; index++) {
@@ -82,3 +67,19 @@ caso 5: x >= 123 y x < 127
 
     }
 }
+
+/*
+sea x el numero de la letra
+sea n el numero del desplazamiento
+caso 1: (x-32+n)%33+32 para simbolos y numeros
+caso 2: (x-65+n)%26+65 para mayusculas
+caso 3: (x-32+n)%6+91 mas simbolos
+caso 4: (x-32+n)%26+97 minusculas
+caso 5: (x-32+n)%5+123 otros simbolos
+condiciones
+caso 1: x >= 32 y x < 65
+caso 2: x >= 65 y x < 91
+caso 3: x >= 91 y x < 97
+caso 4: x >= 97 y x < 123
+caso 5: x >= 123 y x < 127
+        */
