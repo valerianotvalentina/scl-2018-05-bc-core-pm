@@ -21,3 +21,15 @@ function clickDescifrar() {
     document.getElementById("muestraMensaje").value = mensajeDescifrado;
 
 }
+
+function clickLimpiar() {
+    document.getElementById("escribeMensaje").value = "";
+    document.getElementById("desplazamiento").value = "";
+    document.getElementById("muestraMensaje").value = "";
+}
+
+function copyMensajeDescifrado() {
+    const encodeText = document.getElementById("muestraMensaje");
+    encodeText.select();
+    document.execCommand("copy");
+}
